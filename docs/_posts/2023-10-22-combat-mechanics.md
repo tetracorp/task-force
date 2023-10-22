@@ -46,10 +46,10 @@ Byte| Size | Field
 Player characters and enemies have the same stats, calculated the same way:
 
 Endurance
-: ![Endurance](../images/tf-Endurance.png "Endurance") Randomly generated in the range 2-6. Hit points. Weapons deal fixed damage.
+: ![Endurance](../images/tf-endurance.png "Endurance") Randomly generated in the range 2-6. Hit points. Weapons deal fixed damage.
 
 Cash
-: ![Cash](../images/tf-Cash.png "Cash") Randomly generated in the range 3-8.
+: ![Cash](../images/tf-cash.png "Cash") Randomly generated in the range 3-8.
 
 Combat Skill
 : ![Combat Skill](../images/tf-combatskill.png "Combat Skill") Randomly
@@ -111,8 +111,8 @@ All seven enemy stats are modified as follows:
 - Hard: +1
 - Mega: +2
 
-Additionally, Defence Factor is set exactly to that value; e.g. on Mega
-difficulty, all enemies will have a Defence Factor of 2.
+The exception is Defence Factor, which is set exactly to that value; e.g. on
+Mega difficulty, all enemies will have a Defence Factor of 2. 
 
 ### Combat mechanics
 
