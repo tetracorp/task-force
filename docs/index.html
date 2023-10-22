@@ -14,7 +14,7 @@ title: Main Index
 
   <h3>About</h3>
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in sortedPosts %}
       {% if post.categories contains "about" %}
       <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
       {% endif %}

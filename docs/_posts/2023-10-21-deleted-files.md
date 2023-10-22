@@ -100,7 +100,7 @@ description is blank.
 The other difference is that three of the five soldiers start in different
 locations.
 
-![Operation Test](../images/operation-test.gif "Operation Test"){:width=640px height=512px}<br>Operation Test
+![Operation Test](../images/operation-test.gif "Operation Test"){: width="640" height="512"}<br>Operation Test
 {:.center}
 
 Two appear in the usual position at the bottom-left of the map behind the fence.
