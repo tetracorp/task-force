@@ -83,21 +83,21 @@ Only used for enemies.
 The enemy types differ by appearance and equipment loadout.
 
 Normal (Sprite #23)
-: Randomly has one of: Pistol, Machine Gun, or Lasight SMG. Also has a grenade.
+: ![Normal enemy](../images/tf-enemy-normal.png "Normal enemy") Randomly has one of: Pistol, Machine Gun, or Lasight SMG. Also has a grenade.
 
 Big Gun (Sprite #27)
-: Randomly has either a Bazooka with three shells, or a Plasma Gun.
+: ![Big Gun enemy](../images/tf-enemy-big-gun.png "Big Gun enemy") Randomly has either a Bazooka with three shells, or a Plasma Gun.
 
 Elite (Sprite #31)
-: Randomly has one of: Machine Gun, Lasight SMG, or Accurifle. Also has a knife
+: ![Elite enemy](../images/tf-enemy-elite.png "Elite enemy") Randomly has one of: Machine Gun, Lasight SMG, or Accurifle. Also has a knife
 and Body Armour 1.
 
 Android (Sprite #35)
-: Randomly has two of any weapons, other than Bazooka. Additionally, has a
+: ![Android enemy](../images/tf-enemy-android.png "Android enemy") Randomly has two of any weapons, other than Bazooka. Additionally, has a
 grenade and Body Armour 1.
 
 Captain (Sprite #39)
-: Always has a pistol and Body Armour 2.
+: ![Captain enemy](../images/tf-enemy-captain.png "Captain enemy") Always has a pistol and Body Armour 2.
 
 ### Difficulty
 
@@ -177,3 +177,6 @@ so that the square adjacent to the attacker is 1 away.
 The range penalty for Accurifle means that it will often miss when used at the
 extent of its range, and the amount of damage it deals will almost never kill an
 enemy in one hit.
+
+Mines deal 8 damage, which is enough to kill any of the player's squad in one
+hit.
