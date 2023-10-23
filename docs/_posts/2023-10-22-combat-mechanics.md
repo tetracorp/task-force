@@ -19,7 +19,8 @@ Byte| Size | Field
 0   | word | Sprite
 2   | word | X coord
 4   | word | Y coord
-6   | word | Terrain type soldier is standing on
+6   | byte | Terrain type soldier is standing on
+7   | byte | Enemy moving or not
 8   | word | Endurance
 10  | word | Cash
 12  | word | Combat Skill
@@ -69,34 +70,34 @@ worn by enemies has no effect. In any case, Defense Factor effectively reduces
 the enemy's Combat Skill when calculating a hit.
 
 Alertness
-: Randomly generated in the range 3-12. Only used for enemies.
+: Randomly generated in the range 3-12. Only used for enemies. Determines the
+range at which they will react to squad members.
 
 Initiative
 : Randomly generated in the range 1-8, with a bias toward average values.
 Actually generates a number from 2-7, then has an even chance to add one,
 subtract one, or do nothing. This creates a 1/6 chance of a 3, 4, 5 or 6;
 a 1/9 chance each of a 2 or 7, and a 1/18 chance of a 1 or 8.
-Only used for enemies.
+Only used for enemies. Determines how likely they are to act when a squad
+member is spotted.
 
 ### Enemy types
 
 The enemy types differ by appearance and equipment loadout.
 
-Normal (Sprite #23)
+Normal
 : ![Normal enemy](../images/tf-enemy-normal.png "Normal enemy") Randomly has one of: Pistol, Machine Gun, or Lasight SMG. Also has a grenade.
 
-Big Gun (Sprite #27)
+Big Gun
 : ![Big Gun enemy](../images/tf-enemy-big-gun.png "Big Gun enemy") Randomly has either a Bazooka with three shells, or a Plasma Gun.
 
-Elite (Sprite #31)
-: ![Elite enemy](../images/tf-enemy-elite.png "Elite enemy") Randomly has one of: Machine Gun, Lasight SMG, or Accurifle. Also has a knife
-and Body Armour 1.
+Elite
+: ![Elite enemy](../images/tf-enemy-elite.png "Elite enemy") Randomly has one of: Machine Gun, Lasight SMG, or Accurifle. Also has a knife and Body Armour 1.
 
-Android (Sprite #35)
-: ![Android enemy](../images/tf-enemy-android.png "Android enemy") Randomly has two of any weapons, other than Bazooka. Additionally, has a
-grenade and Body Armour 1.
+Android
+: ![Android enemy](../images/tf-enemy-android.png "Android enemy") Randomly has two of any weapons, other than Bazooka. Additionally, has a grenade and Body Armour 1.
 
-Captain (Sprite #39)
+Captain
 : ![Captain enemy](../images/tf-enemy-captain.png "Captain enemy") Always has a pistol and Body Armour 2.
 
 ### Difficulty
