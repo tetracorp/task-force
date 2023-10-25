@@ -7,6 +7,8 @@ _Task Force_ has room for 5 player squad members and 45 enemies/hostages. 42
 bytes are reserved for each individual. The same data structures are used for
 both player and enemies, but some stats are only relevant to enemies.
 
+See also [Enemy AI routines](../analysis/enemy-ai.html).
+
 1. Table of Contents
 {:toc}
 
@@ -20,7 +22,7 @@ Byte| Size | Field
 2   | word | X coord
 4   | word | Y coord
 6   | byte | Terrain type soldier is standing on
-7   | byte | Enemy moving or not
+7   | byte | Moving status
 8   | word | Endurance
 10  | word | Cash
 12  | word | Combat Skill
@@ -76,10 +78,10 @@ range at which they will react to squad members.
 Initiative
 : Randomly generated in the range 1-8, with a bias toward average values.
 Actually generates a number from 2-7, then has an even chance to add one,
-subtract one, or do nothing. This creates a 1/6 chance of a 3, 4, 5 or 6;
-a 1/9 chance each of a 2 or 7, and a 1/18 chance of a 1 or 8.
-Only used for enemies. Determines how likely they are to act when a squad
-member is spotted.
+subtract one, or do nothing. This creates a 3/18 chance each of a 3, 4, 5 or 6;
+a 2/18 chance each of a 2 or 7; and a 1/18 chance each of a 1 or 8. Only used
+for enemies. Determines how likely they are to attack when they spot a squad
+member.
 
 ### Enemy types
 
@@ -99,6 +101,10 @@ Android
 
 Captain
 : ![Captain enemy](../images/tf-enemy-captain.png "Captain enemy") Always has a pistol and Body Armour 2.
+
+It appears that armour is never factored in for enemies. As per
+[enemy AI routines](../analysis/enemy-ai.html), they always use their longest
+range weapon.
 
 ### Difficulty
 
