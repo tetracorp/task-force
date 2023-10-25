@@ -68,7 +68,7 @@ Defence Factor
 members, randomly generated in the range 1-3. Body Armour increases this by 1, 2
 or 3, to a maximum of 5. For enemies, it instead ranges from -1 to 2 based on
 the difficulty setting (see [Difficulty](#difficulty), below), and Body Armour
-worn by enemies has no effect. In any case, Defense Factor effectively reduces
+worn by enemies has no effect. In any case, Defence Factor effectively reduces
 the enemy's Combat Skill when calculating a hit.
 
 Alertness
